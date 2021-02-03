@@ -31,7 +31,8 @@ const p = fetch('./assets/data.json')
 
 
 
-  
+// Создание функции кота с помощью  Promise
+
 const promiseShchrodinger = new Promise(executor);
 
 function executor(resolve, reject) {
@@ -51,3 +52,20 @@ promiseShchrodinger
   .catch((err) => {
     console.error(err);
   });
+
+/* 
+Создать функцию delay(ms).then(callback)
+setTimeout(()=>{},ms)
+delay(ms).then(()=>{})
+*/
+
+/* Промисификация */
+function delay(ms) {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, ms);
+  });
+}
+
+delay(200).then(() => {
+  console.log('ok');
+});
