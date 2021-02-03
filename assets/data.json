@@ -1,0 +1,11 @@
+{
+  "firstName": "Vlad",
+  "hostname": "facebook.com",
+  "link": "https://google.com",
+  "isMale": true,
+  "age": 20,
+  "isSelected": null,
+  "phones": ["380348437", "894375643"],
+  "friend": { "firstName": "Stepan" },
+  "test": "text"
+}
